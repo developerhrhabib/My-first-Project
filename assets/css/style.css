@@ -485,6 +485,9 @@ hr{
 }
 @media (max-width: 500px) {
     .credit-habib p{
-        font-size: .9rem;
+        font-size: .8rem;
+    }
+    .credit-habib a{
+        font-size: .8rem !important;
     }
 }

@@ -131,7 +131,7 @@ img{
     }
 }
 
-                 /* Footer */
+                /* Footer */
 
 .footer-section{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0,0,0,0.9)), url(../img/Footer-BG.jpg);
@@ -157,9 +157,6 @@ img{
 .footer-icon i{
     font-size: 1.7rem;
     color: var(--brand-color);
-}
-.side{
-    padding-left: 50px;
 }
 .footer-details h2{
     font-size: 1.4rem;
@@ -269,11 +266,7 @@ hr{
     width: 100%;
     background-color: var(--brand-color);
 }
-@media (max-width: 1200px) {
-    .side{
-        padding-left: 20px;
-    }
-}
+
 
 @media (max-width: 992px) {
     .footer-image img{
@@ -289,12 +282,14 @@ hr{
     .footer-details .footer-title p{
         font-size: .8rem;
     }
-    .side{
-        padding-left: 0px;
+    .first-footer{
+        justify-content: center;
+        text-align: center;
     }
     .footer-icon{
         padding-top: 5px;
         gap: 15px;
+        justify-content: center;
     }
     .footer-icon i{
         font-size: 1.4rem;
@@ -309,7 +304,7 @@ hr{
         margin-right: auto;
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .footer-details h2{
         padding-bottom: 10px;
     }
@@ -336,6 +331,14 @@ hr{
     }
     .credit-habib p{
         font-size: 1rem;
+    }
+}
+@media (max-width: 500px) {
+    .credit-habib p{
+        font-size: .8rem;
+    }
+    .credit-habib a{
+        font-size: .8rem !important;
     }
 }
 

@@ -41,8 +41,11 @@ img{
     padding-inline: calc(var(--gap) / 2);
 }
                     /* Navbar */
+.navbar{
+    background-color: #111111;
+}
 .navbar-brand{
-    font-size: 2.2rem !important;
+    font-size: 2rem !important;
     font-weight: 600;
     transition: 200ms ease;
 }
@@ -92,12 +95,16 @@ img{
     transition: transform 400ms ease;
 }
 .nav-link:hover{
-    /* opacity: .85; #dfd3d3*/
     color: var(--brand-color);
 }
 .nav-link:hover::before{
     transform-origin: left;
     transform: scale(1);
+}
+@media (max-width: 768px) {
+    .navbar-nav{
+        gap: 10px;
+    }
 }
 
                 /* Hero-sectoin */
@@ -149,7 +156,7 @@ img{
 }
 @media (max-width:768px) {
     .hero-title h1{
-        font-size: 2.5em;
+        font-size: 2em;
     }
 }
 
@@ -304,6 +311,12 @@ img{
     }
     .middle-audio audio{
         width: 100%;
+    }
+    .middle-details h2{
+        font-size: 2.5rem;
+    }
+    .middle-details p{
+        font-size: 1rem;
     }
 }
 
@@ -804,7 +817,7 @@ hr{
     align-items: center;
 }
 .grid-con h2{
-    font-size: 3em;
+    font-size: 1.8em;
     font-weight: 700;
     color: #fff;
     width: max-content;
@@ -865,6 +878,10 @@ hr{
     .gallery-9{
         grid-column: 2 / 3;
         grid-row: 8 / 10;
+    }
+
+    .grid-con h2{
+        font-size: 3em;
     }
 }
 

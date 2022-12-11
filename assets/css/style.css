@@ -41,9 +41,9 @@ img{
     padding-inline: calc(var(--gap) / 2);
 }
                     /* Navbar */
-.navbar{
+/* .navbar{
     background-color: #111111;
-}
+} */
 .navbar-brand{
     font-size: 2rem !important;
     font-weight: 600;

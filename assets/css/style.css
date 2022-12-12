@@ -11,6 +11,7 @@ body{
 
 li{
     color: #fff !important;
+    list-style: none;
 }
 a{
     color: #fff;
@@ -41,9 +42,9 @@ img{
     padding-inline: calc(var(--gap) / 2);
 }
                     /* Navbar */
-/* .navbar{
+.navbar{
     background-color: #111111;
-} */
+}
 .navbar-brand{
     font-size: 2rem !important;
     font-weight: 600;
@@ -192,6 +193,9 @@ img{
 
             /* middle-section */
 
+.middle-row{
+    justify-content: center;
+}
 .middle-section{
     padding: 70px 0px;
 }
@@ -205,31 +209,18 @@ img{
     border-bottom: 2px solid #aca0a0;
 }
 .middle-img{
-    position: relative;
-}
-.middle-img::before{
-    content: '';
-    position: absolute;
     width: 100%;
-    height: 55px;
-    bottom: 0;
-    left: 0px;
-    background-color: #f1f3f4;
-    border-radius: 0 0 10px 10px;
-}
-.middle-img{
-    width: 80%;
     height: 100%;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0,0,0,0.3)), url(../img/Middle-2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     margin-left: auto;
     margin-right: auto;
 }
 .inner-img{
-    padding-top: 35px;
+    padding-top: 60px;
 }
 .inner-img img{
     width: 200px;
@@ -240,10 +231,7 @@ img{
 }
 
 .middle-audio{
-    margin-top: -54px;
-}
-.middle-audio audio{
-    width: 80%;
+    margin-top: -40px;
 }
 .middle-content{
     padding-left: 50px;
@@ -271,12 +259,31 @@ img{
     opacity: .8;
     padding-bottom: 10px;
 }
-.music-icon{
-    gap: 15px;
+ul{
+    padding-left: 0px;
 }
-.music-icon i{
-    font-size: 1.7rem;
+.icon-list{
+    display: flex;
+    gap: 20px;
+}
+.icon-block{
+    display: block;
+    list-style: none;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 42px;
     color: var(--brand-color);
+    background-color: rgb(233, 224, 224);
+    transition: 250ms ease-out;
+}
+.icon-block i{
+    font-size: 1.5rem;
+}
+.icon-block:hover{
+    color: #fff;
+    background-color: var(--brand-color);
 }
 
 @media (max-width: 992px) {
@@ -285,10 +292,16 @@ img{
         height: 100%;
     }
     .inner-img{
-        padding-top: 70px;
+        padding-top: 80px;
     }
     .middle-content{
         padding-left: 10px;
+    }
+    .middle-details h2{
+        font-size: 2.5rem;
+    }
+    .middle-details p{
+        font-size: 1rem;
     }
 }
 @media (max-width: 768px) {
@@ -304,7 +317,7 @@ img{
         margin-top: -14px;
     }
     .inner-img{
-        padding-top: 40px;
+        padding-top: 15px;
     }
     .middle-content{
         padding-top: 40px;
@@ -317,6 +330,9 @@ img{
     }
     .middle-details p{
         font-size: 1rem;
+    }
+    .icon-list{
+        justify-content: center;
     }
 }
 
@@ -335,22 +351,9 @@ img{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgb(43, 35, 35);
-    height: 100px;
-}
-.flex-box-2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #9f9e9e59;
-    height: 100px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    background-color: #d4d1d159;
+    height: 80px;
+    margin-bottom: 40px;
 }
 .music-content h2{
     font-size: 2.7rem;
@@ -375,12 +378,10 @@ img{
 .flex-3{
     width: 25%;
 }
-.flex-3 i{
-    color: #fff;
-}
-.flex-2 audio{
-    width: 100%;
-    outline: none;
+.flex-3 .icon-list{
+    justify-content: center;
+    gap: 15px;
+    padding-top: 15px;
 }
 
 @media (max-width: 768px) {
@@ -391,7 +392,9 @@ img{
         width: 100%;
     }
     .flex-1 h2{
+        font-size: 1.4rem;
         text-align: center;
+        margin-bottom: 22px;
     }
     .flex-2{
         width: 100%;
@@ -464,20 +467,39 @@ img{
     margin-bottom: 40px;
 }
 .image-content{
-    padding: 6px 25px;
+    height: 45px;
+    padding: 0 25px;
     background-color: #9f9e9e59;
 }
 .image-content h2{
     font-size: 1.4rem;
     color: black;
+    margin-top: 8px;
 }
-
-.other-music-icon{
+.music-icon-list{
+    display: flex;
     gap: 15px;
+    margin-top: 15px;
 }
-.other-music-icon i{
-    font-size: 1.6rem;
+.music-icon-block{
+    display: block;
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 32px;
     color: var(--brand-color);
+    background-color: rgb(233, 224, 224);
+    box-shadow: 0px 2px 5px rgb(110 106 106);
+    transition: 300ms ease-out;
+}
+.music-icon-block i{
+    font-size: 1.2rem;
+}
+.music-icon-block:hover{
+    color: #fff;
+    background-color: var(--brand-color);
 }
 
 @media (max-width: 1400px) {
@@ -503,7 +525,7 @@ img{
 }
 @media (max-width: 1200px) {
     .image-content h2{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         color: black;
     }
     .other-music-icon{
@@ -535,6 +557,10 @@ img{
 }
 
 @media (max-width: 992px) {
+    .image-content h2{
+        font-size: 1.3rem;
+        color: black;
+    }
     .img-details {
         position: absolute;
         top: 5px;
@@ -602,15 +628,7 @@ img{
     font-size: 1rem;
     margin: 0px !important;
     line-height: 1.4;
-    padding: 10px 0px !important;
-}
-.footer-icon{
-    padding-top: 5px;
-    gap: 20px;
-}
-.footer-icon i{
-    font-size: 1.7rem;
-    color: var(--brand-color);
+    padding: 15px 0px !important;
 }
 .footer-details h2{
     font-size: 1.4rem;
@@ -618,10 +636,10 @@ img{
 }
 .footer-details a{
     font-size: 1.2rem !important;
-    width: max-content;
 }
 .footer-nav{
     position: relative;
+    width: max-content;
 }
 .footer-nav::before{
     content: '';

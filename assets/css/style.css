@@ -42,6 +42,7 @@ img{
     padding-inline: calc(var(--gap) / 2);
 }
                     /* Navbar */
+
 .navbar-brand{
     font-size: 2rem !important;
     font-weight: 600;

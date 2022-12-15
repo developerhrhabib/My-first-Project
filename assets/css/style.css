@@ -42,6 +42,7 @@ img{
     padding-inline: calc(var(--gap) / 2);
 }
                     /* Navbar */
+
 .navbar{
     background-color: #111111;
 }
@@ -56,7 +57,7 @@ img{
 .navbar{
     padding: 10px 0px;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
 }
 .navbar-brand{
     color: #fff;
@@ -272,7 +273,7 @@ ul{
     height: 38px;
     text-align: center;
     border-radius: 50%;
-    line-height: 42px;
+    line-height: 40px;
     color: var(--brand-color);
     background-color: rgb(233, 224, 224);
     transition: 250ms ease-out;

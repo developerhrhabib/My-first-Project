@@ -273,7 +273,7 @@ ul{
     height: 38px;
     text-align: center;
     border-radius: 50%;
-    line-height: 40px;
+    line-height: 44px;
     color: var(--brand-color);
     background-color: rgb(233, 224, 224);
     transition: 250ms ease-out;
@@ -333,6 +333,9 @@ ul{
     }
     .icon-list{
         justify-content: center;
+    }
+    .icon-block{
+        line-height: 40px;
     }
 }
 
@@ -488,7 +491,7 @@ ul{
     height: 30px;
     text-align: center;
     border-radius: 50%;
-    line-height: 30px;
+    line-height: 32px;
     color: var(--brand-color);
     background-color: rgb(233, 224, 224);
     box-shadow: 0px 2px 5px rgb(110 106 106);
@@ -609,6 +612,9 @@ ul{
     }
     .img-icon i{
         font-size: 1.5rem;
+    }
+    .music-icon-block{
+        line-height: 30px;
     }
 }
                 /* Footer */

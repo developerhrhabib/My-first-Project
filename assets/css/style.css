@@ -156,7 +156,7 @@ img{
 }
 .btn-first{
     background-color: var(--brand-color);
-    padding: 10px 25px;
+    padding: 10px 40px;
     border-radius: 15px;
     transition: all 300ms ease-in-out;
 }
@@ -165,7 +165,7 @@ img{
 }
 .btn-second{
     border: 2px solid #fff;
-    padding: 10px 25px;
+    padding: 10px 40px;
     border-radius: 15px;
 }
 @media (max-width: 992px) {
